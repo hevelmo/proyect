@@ -3,116 +3,449 @@
 <!--[if IE 7]>         <html lang="es-MX" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="es-MX" class="no-js lt-ie10 lt-ie9"> <![endif]-->
 <!--[if IE 9]>         <html lang="es-MX" class="no-js lt-ie10"> <![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Medigraf">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>default</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+		<link type="text/css" rel="stylesheet" href="css/suzuki/main.css" />
+		<link type="text/css" rel="stylesheet" href="css/fontawesome/font-awesome.css" />
+		<!--<link type="text/css" rel="stylesheet" href="css/webfont/suzuki-webfontkit/stylesheet.css" />-->
+		<link type="text/css" rel="stylesheet" href="css/sections/home.css" />
+        <link type="text/css" rel="stylesheet" href="css/sections/models-home.css" />
+		<!--[if IE]>
+	    <link type="text/css" rel="stylesheet" href="/css/suzuki/iefix.css" />
+	    <![endif]-->
+	    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+	    <!--<script src="lib/modernizr/modernizr-2.8.3.js"></script>-->
+	</head>
+	<body>
+		<!-- Begin: Header -->
+			<section id="header-wrapper">
+			    <section id="header-content">
+			        <div class="header-wrapper" id="header-spacer">
+					    <header id="header-zone">
+					        <div id="logo-wrapper">
+					            <div id="logo">
+					                <a href="/" title="Suzuki Autos México">
+					                    <span>Suzuki <sup style="position: relative; top: -2px;">&copy;</sup> Guadalajara</span>
+					                </a>
+					            </div>
+					        </div>
+					        <div id="regular-header">
+					            <div class="content-no_wrapper">
+					                <div id="top-bar">
+					                    <nav>
+					                        <ul>
+					                            <li>
+					                                <a href="grupo"   title="Grupo">
+					                                    <span>Grupo</span>
+					                                </a>
+					                            </li>
+					                            <li>
+					                                <a href="concesionarias"   title="Grupo">
+					                                    <span>Concesionarias</span>
+					                                </a>
+					                            </li>
+					                            <li>
+					                                <a href="catalogo.html" title="Catalogos">
+					                                    <span>Catálogos</span>
+					                                </a>
+					                            </li>
+					                            <li class="last">
+					                                <a href="contacto.html" title="Contactános">
+					                                    <span>Contáctanos</span>
+					                                </a>
+					                            </li>
+					                        </ul>
+					                    </nav>
+					                </div>
+					                <div id="main-nav">
+					                    <nav>
+					                        <ul>
+					                            <li>
+					                                <a href="#modelos" title="Modelos" class="expand-header" id="header-models-button">
+					                                    <span>Modelos</span>
+					                                </a>
+					                            </li>
+					                            <li>
+													<!--<a href="#financiamiento" -->
+					                                <a href="#financiamiento" onclick="ga('send', 'event', 'Financiamiento', 'Paso_1', 'Header_Selecciona_Suzuki');" title="Financiamiento" class="expand-header" id="header-financing-button">
+					                                    <span>Financiamiento</span>
+					                                </a>
+					                            </li>
+					                            <li>
+					                                <a href="#propietarios" title="Propietarios" class="expand-header" id="header-owners-button">
+					                                    <span>Mi Suzuki</span>
+					                                </a>
+					                            </li>
+					                            <li class="last">
+													<!--<a href="#antes-de-comprar" -->
+					                                <a href="#antes-de-comprar" title="Antes de comprar" class="expand-header" id="header-before-buy-button">
+					                                    <span>Comprar un Suzuki</span>
+					                                </a>
+					                            </li>
+					                            <div class="clearfix"></div>
+					                        </ul>
+					                    </nav>
+					                </div>
+					            </div>
+					        </div>
+					        <div id="models-header">
+					            <div class="content">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>default</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<link type="text/css" rel="stylesheet" href="css/suzuki/main.css" />
-	<link type="text/css" rel="stylesheet" href="css/suzuki/font-awesome.css" />
+					            </div>
+					        </div>
+					    </header>
+					    <div id="header-mobile">
+					        <a href="index.html"><img src="images/template/common/header/horizontal_logo.png" alt="Logo Suzuki"></a>
+					        <i>&#9776;</i>
+					    </div>
+					    <div id="header-panel">
+					        <div id="header-sections-wrapper"></div>
+					    </div>
+					</div>
+			    </section>
+			</section>
+		<!-- End: Header -->
+		<!-- Begin: Content -->
+            <div id="content-wrapper">
+                <!--<a href="#prueba-de-manejo"  onclick=" var modelo = get_car_by_url(); $.openPanel('test-drive', modelo ); return false;" class="" id="" style="position: fixed; top: 0px; z-index: 5000; right: 18%;">
+                    <span>
+                        <img src="images/template/models/agendar2.png" alt="">
+                    </span>
+                </a>-->
+                <div id="content-content">
+                    <div class="promos-wrapper-s hide_s-cross">
+                        <div class="promos-container">
+                            <div class="promotion" id="">
+                                <!-- INICIO DE NUEVO SLIDER -->
+                                    <div class="specifications-wrapper">
+                                        <div class="specifications" id="features-wrapper">
+                                            <!-- slide 00 -->
+                                            <div class="specification" style="background-image: url('images/sections/home/slider/slider_marca-2014.jpg');">
+                                                <div class="title-wrapper" style="color: #fff">
+                                                    <div class="title">
+                                                        &nbsp;
+                                                    </div>
+                                                </div>
+                                                <div class="description extra-compact"><p>&nbsp;</p></div>
+                                            </div>
+                                            <!-- slide 01 -->
+                                            <div class="specification" style="background-image: url('images/sections/home/slider/promo-enero.jpg');">
+                                                <div class="title-wrapper" style="color: #fff">
+                                                    <div class="title">
+                                                        &nbsp;
+                                                    </div>
+                                                </div>
+                                                <div class="description compact"><p>&nbsp;</p></div>
+                                            </div>
+                                            <!-- slide 02 -->
+                                            <!--<div class="specification" style="background-image: url('images/sections/home/slider/default.jpg');">
+                                                <div class="title-wrapper" style="color: #fff">
+                                                    <div class="title">
+                                                        <h5>
+                                                            Nuevo <span>Suzuki</span>
+                                                            <strong>S-CROSS</strong>
+                                                            <span class="small">desde</span> $ 249,900*
+                                                        </h5>
+                                                        <small>*VERSIÓN GL/TM</small>
+                                                        <p><strong>Agenda tu prueba de manejo.</strong> El crossover que te hará olvidar tu primera camioneta.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="description extra-compact" style="margin-top: 65px;">
+                                                    <form id="new_promo" name="new_promo" method="post" action="new_promo.php">
+                                                        <fieldset>
+                                                            <input type="text" class="new_promo_input" id="sxc_name" name="name" placeholder="Nombre completo" data-validation-data="required|name" />
+                                                            <p class="invalid-message" id="error_mail">&nbsp;<span>&nbsp;</span></p>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <input type="tel" class="new_promo_input" id="sxc_tel" name="tel" placeholder="Número de celular (10 dígitos)" data-validation-data="required|phone" />
+                                                            <p class="invalid-message" id="error_mail">&nbsp;<span>&nbsp;</span></p>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <input type="email" class="new_promo_input" id="sxc_email"  name="email"    placeholder="Correo electrónico"    data-validation-data="required|email" />
+                                                            <p class="invalid-message" id="error_mail">&nbsp;<span>&nbsp;</span></p>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <input type="submit" class="new_promo_input_submit" id="sxc_send" value="Enviar"/>
+                                                        </fieldset>
+                                                    </form>
+                                                    <div class="second-step hidden">
+                                                        <p class="title">Gracias</p>
+                                                        <p>Tu prueba de manejo ha sido agendada.</p>
+                                                        <p>Pronto recibirás confirmación en tu correo electrónico: <span id="sxc_email_review"></span></p>
+                                                        <p>Te hemos asignado un asesor quien se pondrá en contacto contigo para confirmar tus datos y cualquier duda que puedas tener.</p>
 
-	<!--[if IE]>
-    <link type="text/css" rel="stylesheet" href="/css/suzuki/iefix.css" />
-    <![endif]-->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-<body>
-	<!-- Begin: Header -->
-	<section id="header-wrapper">
-	    <section id="header-content">
-	        <div class="header-wrapper" id="header-spacer">
-			    <header id="header-zone">
-			        <div id="logo-wrapper">
-			            <div id="logo">
-			                <a href="/" title="Suzuki Autos México">
-			                    <span>Suzuki <sup style="position: relative; top: -2px;">&copy;</sup> Guadalajara</span>
-			                </a>
-			            </div>
-			        </div>
-			        <div id="regular-header">
-			            <div class="content-no_wrapper">
-			                <div id="top-bar">
-			                    <nav>
-			                        <ul>
-			                            <li>
-			                                <a href="grupo"   title="Grupo">
-			                                    <span>Grupo</span>
-			                                </a>
-			                            </li>
-			                            <li>
-			                                <a href="concesionarias"   title="Grupo">
-			                                    <span>Concesionarias</span>
-			                                </a>
-			                            </li>
-			                            <li>
-			                                <a href="catalogo.html" title="Catalogos">
-			                                    <span>Catálogos</span>
-			                                </a>
-			                            </li>
-			                            <li class="last">
-			                                <a href="contacto.html" title="Contactános">
-			                                    <span>Contáctanos</span>
-			                                </a>
-			                            </li>
-			                        </ul>
-			                    </nav>
-			                </div>
-			                <div id="main-nav">
-			                    <nav>
-			                        <ul>
-			                            <li>
-			                                <a href="#modelos" title="Modelos" class="expand-header" id="header-models-button">
-			                                    <span>Modelos</span>
-			                                </a>
-			                            </li>
-			                            <li>
-											<!--<a href="#financiamiento" -->
-			                                <a href="#financiamiento" onclick="ga('send', 'event', 'Financiamiento', 'Paso_1', 'Header_Selecciona_Suzuki');" title="Financiamiento" class="expand-header" id="header-financing-button">
-			                                    <span>Financiamiento</span>
-			                                </a>
-			                            </li>
-			                            <li>
-			                                <a href="#propietarios" title="Propietarios" class="expand-header" id="header-owners-button">
-			                                    <span>Mi Suzuki</span>
-			                                </a>
-			                            </li>
-			                            <li class="last">
-											<!--<a href="#antes-de-comprar" -->
-			                                <a href="#antes-de-comprar" title="Antes de comprar" class="expand-header" id="header-before-buy-button">
-			                                    <span>Comprar un Suzuki</span>
-			                                </a>
-			                            </li>
-			                            <div class="clearfix"></div>
-			                        </ul>
-			                    </nav>
-			                </div>
-			            </div>
-			        </div>
-			        <div id="models-header">
-			            <div class="content">
+                                                        <p><a href="s-cross.html">Conoce más del S-cross</a></p>
+                                                        <fieldset>
+                                                            <button id="s-cross_finish">Finalizar</button>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>-->
+                                            <!-- slide 04 -->
+                                            <!--
+                                            <div class="specification" style="background-image: url('images/sections/home/slider/slider-5.jpg');">
+                                                <div class="title-wrapper" style="color: #fff">
+                                                    <div class="title">
+                                                        &nbsp;
+                                                    </div>
+                                                </div>
+                                                <div class="description regular"><p>&nbsp;</p></div>
+                                            </div>
+                                            -->
+                                            <!-- slide 05 -->
+                                            <div class="specification" style="background-image: url('images/sections/home/slider/promos03.jpg');">
+                                                <div class="title-wrapper" style="color: #fff">
+                                                    <div class="title">
+                                                       &nbsp;
+                                                    </div>
+                                                </div>
+                                                <div class="description compact"><p>&nbsp;</p></div>
+                                            </div>
+                                            <!-- slide 06 -->
+                                            <div class="specification" style="background-image: url('images/sections/home/slider/nueva-vitara.jpg');">
+                                                <div class="title-wrapper" style="color: #fff">
+                                                    <div class="title">
+                                                       &nbsp;
+                                                    </div>
+                                                </div>
+                                                <div class="description compact"><p>&nbsp;</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="specifications-controls">
+                                            <div class="arrows">
+                                                <div class="arrow left"><a class="specifications-controls" href="#left"><span>Left</span></a></div>
+                                                <div class="arrow right"><a class="specifications-controls" href="#right"><span>Right</span></a></div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- FIN DE NUEVO SLIDER -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-title hide_s-cross" style="margin-bottom: 0; border-bottom: none;">
+                        <p class="title">Nuevo S-Cross</p>
+                    </div>
+                    <section>
+                        <div id="home-scross">
+                            <div class="full_width">
+                                <div class="hover_details">
+                                    <div class="relative">
+                                        <div class="details"><img src="images/sections/home/s-cross/see.png" alt=""/></div>
+                                        <div class="up"><img src="images/sections/home/s-cross/up.png" alt=""/></div>
+                                        <div class="down"><img src="images/sections/home/s-cross/down.png" alt=""/></div>
+                                    </div>
+                                </div>
+                                <img class="scross_bg flash" src="images/sections/home/s-cross/car-on.jpg" alt="S-cross"/>
+                                <img class="scross_bg" src="images/sections/home/s-cross/car.jpg" alt="S-cross"/>
+                            </div>
+                            <div class="s-cross_form hidden">
+                                <div class="promo-video-bg">
+                                    <video id="video-home-scross" preload="auto" muted="" poster="files/videos/s-cross-promo/s-cross.jpg">
+                                        <source src="files/videos/s-cross-promo/s-cross.mp4" type="video/mp4">
+                                        <source src="files/videos/s-cross-promo/s-cross.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="s-cross_close"></div>
+                                <div class="form-scross-wrapper">
+                                    <div class="left">
+                    					<div class="first-step">
+                                            <h5>
+                                                Nuevo <span>Suzuki</span>
+                                                <strong>S-CROSS</strong>
+                                                <span class="small">desde</span> $ 249,900*
+                                            </h5>
+                                            <small>*VERSIÓN GL/TM</small>
+                                            <p><strong>Agenda tu prueba de manejo.</strong> El crossover que te hará olvidar tu primera camioneta.</p>
+                                            <form id="contactos" name="contactos" method="post" action="testscross.php">
+                                            <!--<form onsubmit="$.test_drive_promo_s_cross( this ); return false;"> -->
+                                                <input type="hidden" name="concesionaria" value="Suzuki Guadalajara">
+                                                <input type="hidden" name="modelo" value="s-cross">
+                                                <fieldset>
+                                                    <input type="text"	id="sxc_name" 	name="name"		placeholder="Nombre completo"		data-validation-data="required|name" />
+                                                    <p class="invalid-message" id="error_mail">&nbsp;<span>&nbsp;</span></p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <input type="tel"	id="sxc_tel" 	name="tel" 		placeholder="Número de celular (10 dígitos)" maxlength="10" 		data-validation-data="required|phone" />
+                                                    <p class="invalid-message" id="error_mail">&nbsp;<span>&nbsp;</span></p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <input type="email"	id="sxc_email"	name="email"	placeholder="Correo electrónico"	data-validation-data="required|email" />
+                                                    <p class="invalid-message" id="error_mail">&nbsp;<span>&nbsp;</span></p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <input type="submit" id="sxc_send" value="Enviar"/>
+                                                </fieldset>
+                                            </form>
+                    					</div>
+                    					<div class="second-step hidden">
+                    						<p class="title">Gracias</p>
+                    						<p>Tu prueba de manejo ha sido agendada.</p>
+                    						<p>Pronto recibirás confirmación en tu correo electrónico: <span id="sxc_email_review"></span></p>
+                    						<p>Te hemos asignado un asesor quien se pondrá en contacto contigo para confirmar tus datos y cualquier duda que puedas tener.</p>
 
-			            </div>
-			        </div>
-			    </header>
-			    <div id="header-mobile">
-			        <a href="index.html"><img src="images/template/common/header/horizontal_logo.png" alt="Logo Suzuki"></a>
-			        <i>&#9776;</i>
-			    </div>
-			    <div id="header-panel">
-			        <div id="header-sections-wrapper"></div>
-			    </div>
-			</div>
-	    </section>
-	</section>
-	<!-- End: Header -->
+                    						<p><a href="s-cross.html">Conoce más del S-cross</a></p>
+                                            <fieldset>
+                                                <button id="s-cross_finish">Finalizar</button>
+                                            </fieldset>
+                    					</div>
+
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/sections/home/s-cross/badge.png" alt="auto TV Show"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </section>
+                </div>
+            </div>
+        <!-- End: Content -->
+        <!-- Begin: Footer -->
+            <div id="footer-wrapper">
+                <div id="footer-content">
+                    <div class="footer-row first row-1">
+                        <div class="footer-column column-a">
+                            <div class="footer-title">Comprar un Suzuki <i>+</i></div>
+                            <ul class="links">
+                                <li><a href="#modelos" onclick="$.openPanel( 'models' );return false;"><span>Modelos</span></a></li>
+                                <li><a href="catalogo.html"><span>Catálogos</span></a></li>
+                                <!--<li><a href="#prueba-de-manejo"  onclick=" var modelo = get_car_by_url(); $.openPanel('test-drive', modelo ); return false;"><span>Agenda prueba de manejo</span></a></li>-->
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="footer-column column-b">
+                            <div class="footer-title">Redes sociales <i>+</i></div>
+                            <ul class="links social">
+                                <li><a onclick="ga('send', 'event', 'Social', 'Liga_externa', 'Footer_Facebook');"  target="_blank" href="https://www.facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta"><span>Facebook</span></a></li>
+                                <li><a onclick="ga('send', 'event', 'Social', 'Liga_externa', 'Footer_Twitter');"   target="_blank" href="https://twitter.com/Suzuki_Gdl"><span>Twitter</span></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="footer-column column-c">
+                            <div class="footer-title">Catálogos <i>+</i></div>
+                            <ul class="links links-s-1">
+                                <li><a href="catalogo.html#swift"><span>Swift</span></a></li>
+                                <li><a href="catalogo.html#swift-sport"><span>Swift Sport</span></a></li>
+                                <li><a href="catalogo.html#sx4-crossover"><span>SX4 Crossover</span></a></li>
+                                <li><a href="catalogo.html#sx4-sedan"><span>SX4 Sedán</span></a></li>
+                            </ul>
+                            <ul class="links links-s-2">
+                                <li><a href="catalogo.html#kizashi"><span>Kizashi</span></a></li>
+                                <li><a href="catalogo.html#s-cross"><span>S-Cross</span></a></li>
+                                <li><a href="catalogo.html#grand-vitara"><span>Grand Vitara</span></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="footer-column column-d hidden">
+                            <div class="footer-title">Financiamiento <i>+</i></div>
+                            <ul class="links">
+                                <!--<a href="#financiamiento"
+                                <li><a href="#" onclick="$.openPanel( 'financing' );return false;"><span>Obtener una cotización hoy mismo</span></a></li> -->
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="footer-row row-2">
+                        <div class="footer-column column-g">
+                            <div class="footer-title">Noticias Suzuki</div>
+                            <div class="footer-form">
+                                <!-- Begin MailChimp Signup Form -->
+                                    <div id="mc_embed_signup">
+                                        <p>Experimenta el estilo de vida Suzuki. Ingresa tus datos:</p>
+                                        <form action="//medigraf.us6.list-manage.com/subscribe/post?u=eb6adc86fe16ad4e6562f80c1&amp;id=0136300666" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                            <div id="mc_embed_signup_scroll">
+                                                <fieldset>
+                                                    <label for="mce-FNAME"><span style="color: red; font-size: 12px;"><span class="fa fa-asterisk"></span></span> Nombre completo:</label>
+                                                    <input type="text" id="mce-FNAME" name="FNAME" placeholder="Nombre completo" data-validation-data="required|name">
+                                                    <p class="invalid-message">Escribe tu nombre<span>&nbsp;</span></p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <label for="mce-EMAIL"><span style="color: red; font-size: 12px;"><span class="fa fa-asterisk"></span></span> Correo electrónico:</label>
+                                                    <input type="email" id="mce-EMAIL" name="EMAIL" placeholder="Correo electrónico" data-validation-data="required|email" novalidate="">
+                                                    <p class="invalid-message">Escribe tu email<span>&nbsp;</span></p>
+                                                </fieldset>
+                                                <input type="hidden" name="CONCESIO" value="Guadalajara">
+                                            	<div id="mce-responses" class="clear">
+                                            		<div class="response" id="mce-error-response" style="display:none">Ocurrio un problema.</div>
+                                            		<div class="response" id="mce-success-response" style="display:none">Se envió tu mensaje</div>
+                                            	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_eb6adc86fe16ad4e6562f80c1_0136300666" tabindex="-1" value=""></div>
+                                                <div class="clear submit"><input type="submit" class="button red" value="Registrarse" name="subscribe" id="mc-embedded-subscribe"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                <!--End mc_embed_signup-->
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="footer-row first row-1">
+                    	<div class="footer-column column-a">
+                            <div class="footer-title"><a href="http://www.suzukivallarta.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Av. Vallarta</a></div>
+                            Av. Vallarta No. 5300.<br/>
+                            Col. Jardines Vallarta. Zapopan, Jal.<br/>
+                            Tel. 01(33)3777-1989
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="footer-column column-c">
+                            <div class="footer-title"><a href="http://www.suzuki-lm.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Av. López Mateos</a></div>
+                            Av. López Mateos No. 5654<br/>
+                            Col. Arboledas. Zapopan, Jal.<br/>
+                            Tel. 01(33)3884-8200
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="footer-column column-c">
+                            <div class="footer-title"><a href="http://www.suzukicolima.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Colima</a></div>
+                            Av. Felipe Sevilla No. 536<br/>
+                            Col. Lomas de Circumbalación. Colima, Colima.<br/>
+                            Tel. 01(31)2316-3263
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="footer-column column-c">
+                            <div class="footer-title"><a href="http://www.suzukimorelia.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Morelia</a></div>
+                            Periférico Paseo de la Republica 3169 Colonia Las Américas<br/>
+                            Morelia, Michoacán, C.P. 58270
+                            Tel. 01-(443)-500-53-00
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="footer-row last">
+                        <div class="footer-copyright">
+                            <p>&copy; 2015 Suzuki Motor de México / Guadalajara</p>
+                        </div>
+                        <div class="footer-legals">
+                            <ul class="links">
+                                <li><a href="legales.html"><span>Términos legales</span></a></li>
+                                <li><a href="aviso-privacidad.html"><span>Aviso de privacidad</span></a></li>
+                                <li class="last"><a target="_blank" href="http://www.globalsuzuki.com/"><span>Suzuki Global</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="content-responsive"></div>-->
+        <!-- End: Footer -->
 
 
+		<script src="lib/jquery/jquery-1.11.2.js"></script>
+		<script src="lib/bootstrap/bootstrap.js"></script>
+		<script src="lib/handlebars.runtime.min.js"></script>
 
-
-	<script type="text/javascript" src="js/faviconTest.js"></script>
-	<script type="text/javascript" src="js/favicon.js"></script>
-</body>
+		<script src="lib/faviconTest.js"></script>
+		<script src="lib/favicon.js"></script>
+	</body>
 </html>
