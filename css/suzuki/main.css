@@ -54,7 +54,7 @@ font-family: 'Suzuki-HeadlineRegular';display:inline-block;}
     margin:0 auto;
 }
 .header-wrapper #header-zone #models-header {
-    background:url("/images/template/models/top-bg.png") left top repeat-x;
+    background:url("../../images/template/models/top-bg.png") left top repeat-x;
     height:50px;
 }
 .header-wrapper #header-zone #models-header li {
@@ -65,7 +65,7 @@ font-family: 'Suzuki-HeadlineRegular';display:inline-block;}
     height:50px;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li {
-    background:url("/images/template/models/separator.png") left top no-repeat;
+    background:url("../images/template/models/separator.png") left top no-repeat;
     display:inline;
     margin:0;
     font-size:16px;
@@ -90,25 +90,25 @@ font-family: 'Suzuki-HeadlineRegular';display:inline-block;}
     text-align:center;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.first a.swift-sport {
-    background:url("/images/template/models/logos/swift_sport.png") center 10px no-repeat;
+    background:url("../images/template/models/logos/swift_sport.png") center 10px no-repeat;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.first a.swift {
-    background:url("/images/template/models/logos/swift.png") center 15px no-repeat;
+    background:url("../images/template/models/logos/swift.png") center 15px no-repeat;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.first a.kizashi {
-    background:url("/images/template/models/logos/kizashi.png") center 15px no-repeat;
+    background:url("../images/template/models/logos/kizashi.png") center 15px no-repeat;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.first a.grand-vitara {
-    background:url("/images/template/models/logos/grand_vitara.png") center 12px no-repeat;
+    background:url("../images/template/models/logos/grand_vitara.png") center 12px no-repeat;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.first a.sx4-crossover {
-    background:url("/images/template/models/logos/sx4_crossover.png") center 7px no-repeat;
+    background:url("../images/template/models/logos/sx4_crossover.png") center 7px no-repeat;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.first a.sx4-sedan {
-    background:url("/images/template/models/logos/sx4_sedan.png") center 7px no-repeat;
+    background:url("../images/template/models/logos/sx4_sedan.png") center 7px no-repeat;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.first a.s-cross {
-    background:url("/images/template/models/logos/s-cross.png") center 15px no-repeat;
+    background:url("../images/template/models/logos/s-cross.png") center 15px no-repeat;
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.first.current a {
     background-color:#ba1f16;
@@ -125,7 +125,7 @@ font-family: 'Suzuki-HeadlineRegular';display:inline-block;}
 }
 .header-wrapper #header-zone #models-header ul.models-menu li.top a {
     opacity:1;
-    background:url("/images/template/models/button-scroll-top.png") left top no-repeat;
+    background:url("../images/template/models/button-scroll-top.png") left top no-repeat;
     display:block;
     height:60px;
     width:60px;
@@ -215,13 +215,13 @@ font-family: 'Suzuki-HeadlineRegular';display:inline-block;}
     background-position:right -133px;
 }
 .header-wrapper #header-zone #regular-header .content-no_wrapper #main-nav nav ul li .expand-header span {
-    background:url("/images/template/common/header/expand-arrow.png") right -12px no-repeat;
+    background:url("../../images/template/common/header/expand-arrow.png") right -12px no-repeat;
     padding-right:20px;
     padding-top:-2px;
 }
 .header-wrapper #header-zone #regular-header .content-no_wrapper #main-nav nav ul li .expand-header.active {
     text-decoration:none;
-    background:url("/images/template/common/header/red-bar.png") left top repeat-x #FFF;
+    background:url("../../images/template/common/header/red-bar.png") left top repeat-x #FFF;
 }
 .header-wrapper #header-zone #regular-header .content-no_wrapper #main-nav nav ul li .expand-header.active span {
     color:#e23136;
@@ -389,4 +389,27 @@ body {
 }
 #footer-wrapper .footer-form form .submit .button {
     font-weight:300;
+}
+#header-panel {
+    display:none;
+    overflow:hidden;
+    padding-top:95px;
+    width:100%;
+    position:fixed;
+    background-color:#fff;
+    box-shadow:0 0 3px rgba(0, 0, 0, 0.4);
+    z-index:100;
+}
+#header-panel #header-sections-wrapper {
+    width:1000%;
+}
+#header-panel #header-sections-wrapper .header-section {
+    float:left;
+    width:10%;
+    padding-bottom:30px;
+}
+#header-panel #header-sections-wrapper .header-section .header-section-content-wrapper {
+    margin:0 auto;
+    width:960px;
+    position:relative;
 }
