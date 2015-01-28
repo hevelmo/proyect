@@ -13,7 +13,17 @@ html {
 }
 #logo-wrapper{height:76px;left:50%;margin-left:-480px;position:absolute;width:350px;z-index:1005;top:0}
 #logo-wrapper #logo{background:url("../../images/template/common/header/horizontal_logo.png") 0 0 no-repeat;height:76px;margin:13px 0 0 0;width:337px}
-#logo-wrapper #logo a{display:block;height:76px;margin:-3px 0 0 8px;width:337px;float:left;-webkit-transition:margin-top ease-in;-webkit-transition-delay:0.15s;-moz-transition:margin-top ease-in 0.15s;-o-transition:margin-top ease-in 0.15s;transition:margin-top ease-in 0.15s}
+#logo-wrapper #logo a{display:block;
+    height:76px;
+    margin:-3px 0 0 8px;
+    width:337px;
+    float:left;
+    -webkit-transition:margin-top ease-in;
+    -webkit-transition-delay:0.15s;
+    -moz-transition:margin-top ease-in 0.15s;
+    -o-transition:margin-top ease-in 0.15s;
+    transition:margin-top ease-in 0.15s;
+}
 #logo-wrapper #logo a span{position: relative;
 top: 0px;
 left: 155px;
