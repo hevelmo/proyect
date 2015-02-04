@@ -1,0 +1,256 @@
+
+.IgniteBar {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 4;
+	width: 50px;
+	-webkit-transition: margin 1s;
+	-webkit-transition-delay: 0s;
+	-moz-transition: margin 1s;
+	-o-transition: margin 1s;
+	transition: margin 1s;
+}
+
+.IgniteBar li {
+	clear: both;
+	width: 50px;
+	height: 50px;
+}
+
+.IgniteBar li > span {
+	display: block;
+	float: right;
+	-webkit-transition: background-color 0.2s;
+	-webkit-transition-delay: 0s;
+	-moz-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+	background-color: #0c121c;
+	height: 49px;
+	width: auto;
+	text-align: right;
+	line-height: 49px;
+	margin-right: 50px;
+	font-size: 8px;
+	letter-spacing: 3px;
+	z-index: 7;
+}
+
+.IgniteBar li > span > a {
+	display: block;
+	text-decoration: none;
+	white-space: nowrap;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 5px;
+}
+
+.IgniteBar li.hover > span,.IgniteBar li:focus > span {
+	background-color: #141b27;
+}
+
+.IgniteBar li.hover > a,.IgniteBar li:focus > a {
+	background-color: #141b27;
+}
+
+.IgniteBar li.share span {
+	z-index: 1;
+	position: relative;
+}
+
+.IgniteBar li > a {
+	z-index: 8;
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+	border-bottom: solid 1px #4e4e4e;
+	background-color: #0c121c;
+	width: 50px;
+	height: 50px;
+	-webkit-backface-visibility: hidden;
+	display: block;
+	-webkit-transition: background-color 0.2s;
+	-webkit-transition-delay: 0s;
+	-moz-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.IgniteBar li > a:hover,.IgniteBar li > a:focus {
+	background-color: #141b27;
+}
+
+.IgniteBar li > a div {
+	width: auto;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	margin-top: -1px;
+}
+
+.IgniteBar li > a div.icon-ignite-brochure:before {
+	font-size: 18px;
+}
+
+.IgniteBar li > a div.icon-share:before {
+	font-size: 18px;
+	margin-top: -2px;
+}
+
+.IgniteBar li > a div.addThis {
+	display: inline;
+}
+
+.IgniteBar li > a div.addThis:before {
+	content: '\e003';
+}
+
+.IgniteBar li .SocialSharing {
+	background-color: #141b27;
+	left: auto;
+	right: 0;
+}
+
+.IgniteBar li .SocialSharing a {
+	background: none;
+	filter: none;
+}
+
+.IgniteBar li:last-child a {
+	border-bottom: 0;
+	height: 49px;
+}
+
+.IgniteBar li:last-child a div {
+	height: 49px;
+	line-height: 49px;
+}
+
+.IgniteBar[data-total="2"] {
+	margin-top: -50.5px;
+}
+
+.IgniteBar[data-total="3"] {
+	margin-top: -76px;
+}
+
+.IgniteBar[data-total="4"] {
+	margin-top: -101.5px;
+}
+
+.IgniteBar[data-total="5"] {
+	margin-top: -127px;
+}
+
+.IgniteBar[data-total="6"] {
+	margin-top: -152.5px;
+}
+
+html.no-js .IgniteBar li.share {
+	display: none;
+}
+
+body .IgniteBar {
+	top: -webkit-calc((100% + 108px) / 2);
+	top: -moz-calc((100% + 108px) / 2);
+	top: calc((100% + 108px) / 2);
+}
+
+body.withSubNavigation .IgniteBar {
+	top: -webkit-calc((100% + 108px + 41px) / 2);
+	top: -moz-calc((100% + 108px + 41px) / 2);
+	top: calc((100% + 108px + 41px) / 2);
+}
+
+@media screen and (min-width:  1px) and (max-width:  900px) {
+	.IgniteBar {
+	display: none;
+}
+
+
+}
+
+.IgniteBarDevice {
+	display: none;
+	border-top: solid 1px #333;
+	overflow: hidden;
+}
+
+.IgniteBarDevice li {
+	display: block;
+	float: left;
+}
+
+.IgniteBarDevice li a {
+	display: block;
+	background: #0c121c;
+	text-align: center;
+	border-left: solid 1px #333;
+	padding: 7px 0 9px;
+	text-decoration: none;
+	font-size: 8px;
+	letter-spacing: 0.2em;
+	-webkit-transition-duration: 0.5s;
+	-khtml-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.IgniteBarDevice li a:hover,.IgniteBarDevice li a:focus {
+	background: #4e4e4e;
+}
+
+.IgniteBarDevice li a span {
+	display: block;
+	margin: 0 auto 3px;
+	height: 28px;
+	font-weight: normal;
+	font-size: 19px;
+	letter-spacing: 0.12em;
+	position: relative;
+	top: 2px;
+}
+
+.IgniteBarDevice li a span.brochure:before {
+	content: '\e015';
+}
+
+.IgniteBarDevice li a span.configure:before {
+	content: '\e016';
+}
+
+.IgniteBarDevice li a span.drive:before {
+	content: '\e017';
+}
+
+.IgniteBarDevice li a span.dealer:before {
+	content: '\e01c';
+}
+
+.IgniteBarDevice li a span.share:before {
+	content: '\e032';
+}
+
+.IgniteBarDevice li:first-child a {
+	border: none;
+}
+
+.IgniteBarDevice[data-total="2"] li {
+	width: 50%;
+}
+
+.IgniteBarDevice[data-total="3"] li {
+	width: 33.33%;
+}
+
+@media screen and (min-width:  1px) and (max-width:  740px) {
+	.IgniteBarDevice {
+	display: block;
+}
+
+
+}

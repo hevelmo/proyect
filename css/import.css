@@ -1,4 +1,444 @@
 @import url(bootstrap/bootstrap.css);
-@import url(suzuki/main.css);
+/*@import url(suzuki/main.css);*/
 @import url(fontawesome/font-awesome.css);
-@import url(sections/home.css);
+/*@import url(sections/home.css);*/
+@import url(webfont/icons.css);
+@import url(webfont/brandFonts.css);
+@import url(royalSlider.css);
+@import url(style-igniteBar.css);
+
+html.noScroll,html.noScroll body {
+	width: 100%;
+	overflow: hidden;
+}
+
+html.noScroll.touchCapability,html.noScroll.touchCapability body {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.section {
+	margin: 0 auto;
+	width: 100%;
+	min-width: 200px;
+	overflow: hidden;
+}
+
+.el .section {
+	width: 100%;
+}
+
+.el {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+body .container {
+	padding: 0;
+	position: relative;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+body.isFullscreen .container {
+	max-width: initial;
+}
+
+@media screen and (min-width:  1px) and (max-width:  740px) {
+	.section {
+	width: 96%;
+}
+
+.el .section {
+	width: 100%;
+}
+
+
+}
+
+@media screen and (min-width:  740px) and (max-width:  899px) {
+	.section {
+	width: 100%;
+	min-width: 320px;
+}
+
+.el .section {
+	width: 100%;
+}
+
+body .el .el {
+	left: 0;
+	width: 100%;
+}
+
+
+}
+
+@media screen and (min-width:  901px) {
+	.section {
+	width: 100%;
+}
+
+.el .section {
+	width: 100%;
+}
+
+
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.dark,.grey {
+	background-color: #222;
+	background-image: url(../images/texture-darkest-grey.png);
+	background-repeat: repeat;
+}
+
+.dark h1,.dark h2,.dark h3,.dark h4,.dark a,.dark .totals,.grey h1,.grey h2,.grey h3,.grey h4,.grey a,.grey .totals {
+	color: #fff;
+}
+
+.dark .primaryHeader,.dark .subHeading,.dark .subOverview,.dark .primaryHeading,.dark .secondaryHeading,.grey .primaryHeader,.grey .subHeading,.grey .subOverview,.grey .primaryHeading,.grey .secondaryHeading {
+	color: #fff;
+}
+
+.grey {
+	background-color: #393939;
+	background-image: url(../images/texture-dark-grey.png);
+	background-repeat: repeat;
+}
+
+.light,.no-js .lightWhenNoJS {
+	background-color: #ddd;
+	background-image: url(../images/texture-grey-mist.png);
+	background-repeat: repeat;
+	color: #333;
+}
+
+.light h1,.light h2,.light h3,.light h4,.light a,.light p,.light .totals,.no-js .lightWhenNoJS h1,.no-js .lightWhenNoJS h2,.no-js .lightWhenNoJS h3,.no-js .lightWhenNoJS h4,.no-js .lightWhenNoJS a,.no-js .lightWhenNoJS p,.no-js .lightWhenNoJS .totals {
+	color: #222;
+}
+
+.light .primaryHeader,.light .subHeading,.light .subOverview,.light .primaryHeading,.light .secondaryHeading,.no-js .lightWhenNoJS .primaryHeader,.no-js .lightWhenNoJS .subHeading,.no-js .lightWhenNoJS .subOverview,.no-js .lightWhenNoJS .primaryHeading,.no-js .lightWhenNoJS .secondaryHeading {
+	color: #222;
+}
+
+.light.ArticleQuote,.no-js .lightWhenNoJS.ArticleQuote {
+	background: #fff;
+}
+
+#landrover .darkText {
+	color: #393939;
+}
+
+#landrover .darkText h1,#landrover .darkText h2,#landrover .darkText h3,#landrover .darkText h4,#landrover .darkText .primaryHeader,#landrover .darkText .subHeading,#landrover .darkText .subOverview,#landrover .darkText .primaryHeading,#landrover .darkText .secondaryHeading,#landrover .darkText .price,#landrover .darkText a,#landrover .darkText p {
+	color: #393939;
+}
+
+body {
+	font-family: Avenir,Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	-webkit-text-size-adjust: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	line-height: 1.4em;
+}
+
+h2 {
+	font-family: lr_ot4,Arial,Helvetica,sans-serif;
+	font-size: 36px;
+}
+
+h1.wideCentred,h2.wideCentred,h3.wideCentred {
+	font-family: lr_ot4,Arial,Helvetica,sans-serif;
+	font-size: 30px;
+	font-weight: 100;
+	letter-spacing: 0.4em;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	left: 6px;
+	line-height: 1.25;
+}
+
+h1.vehicleNameHeader,h2.vehicleNameHeader,h3.vehicleNameHeader {
+	font-weight: 500;
+}
+
+h1.avenir,h2.avenir,h3.avenir {
+	font-family: Avenir,Arial,Helvetica,sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	font-size: 16px;
+}
+
+h1.primaryHeading,h2.primaryHeading,h3.primaryHeading {
+	font-family: lr_ot4,Arial,Helvetica,sans-serif;
+	font-size: 32px;
+	line-height: 1.1em;
+	letter-spacing: 0.15em;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+
+h1.secondaryHeading,h2.secondaryHeading,h3.secondaryHeading {
+	font-size: 32px;
+	line-height: 1.1em;
+	letter-spacing: 0.15em;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: 100;
+}
+
+h1.tertiaryHeading,h2.tertiaryHeading,h3.tertiaryHeading {
+	font-family: Avenir,Arial,Helvetica,sans-serif;
+	font-size: 26px;
+	color: #393939;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+h3 {
+	font-family: lr_ot4,Arial,Helvetica,sans-serif;
+	font-size: 34px;
+}
+
+h3.avenir {
+	font-family: Avenir,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+h3,h4 {
+	font-size: 32px;
+}
+
+.primaryHeader {
+	font-family: lr_ot4,Arial,Helvetica,sans-serif;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.1em;
+	letter-spacing: 0.15em;
+}
+
+.subHeading {
+	color: #cbcbce;
+	font-family: Avenir,Arial,Helvetica,sans-serif;
+	margin: 20px auto 0;
+	font-size: 14px;
+	text-align: center;
+	line-height: 18px;
+	word-wrap: break-word;
+	max-width: 80%;
+}
+
+.subOverview {
+	font-family: Avenir,Arial,Helvetica,sans-serif;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #c2c2c2;
+	letter-spacing: 0.12em;
+}
+
+p {
+	font-family: Avenir,Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #c2c2c2;
+	letter-spacing: 0.015em;
+}
+
+p.darkGrey {
+	color: #393939;
+	padding-bottom: 14px;
+}
+
+b {
+	font-weight: 800;
+}
+
+small {
+	font-size: 11px;
+}
+
+.vehicleTagline {
+	font-size: 16px;
+	margin: 0 auto 45px auto;
+	max-width: 600px;
+}
+
+.unorderedList,.orderedList,.bulletedList {
+	display: inline-block;
+	margin: 40px 0 0 50px;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+.unorderedList:after,.orderedList:after,.bulletedList:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.unorderedList li,.orderedList li,.bulletedList li {
+	padding-left: 10px;
+	list-style-type: square;
+	margin-bottom: 20px;
+}
+
+.orderedList {
+	font-weight: bold;
+}
+
+.orderedList li {
+	list-style-type: decimal;
+}
+
+.orderedList li strong {
+	font-weight: normal;
+}
+
+dl {
+	width: 100%;
+	line-height: 1.6;
+}
+
+dl dt,dl dd {
+	width: 100%;
+	text-align: left;
+}
+
+dl dd {
+	margin-bottom: 20px;
+}
+
+dl dd: last-child {
+	margin-bottom: 0;
+}
+
+dl dt {
+	font-weight: 800;
+}
+
+@media screen and (min-width:  1px) and (max-width:  740px) {
+
+}
+
+@media screen and (min-width:  901px) {
+	dd {
+	width: 40%;
+}
+
+
+}
+
+ul.bullets {
+	margin: 0 0 20px 40px;
+}
+
+ul.bullets li {
+	line-height: 1.6;
+	font-size: 14px;
+	list-style-type: square;
+}
+
+blockquote,.blockquote {
+	margin: 30px 0 20px 40px;
+	font-size: 20px;
+	line-height: 1.5em;
+	letter-spacing: 0.05em;
+}
+
+sub,sup {
+	font-size: 0.7em;
+	position: relative;
+}
+
+sub {
+	bottom: -2px;
+}
+
+sup {
+	top: -2px;
+}
+
+.fontSmooth {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+a, a:hover, a:focus {
+	color: rgba(255,255,255,0.8);
+	text-decoration: none;
+	outline: none;
+}

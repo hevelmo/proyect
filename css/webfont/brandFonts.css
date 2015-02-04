@@ -1,0 +1,97 @@
+/* LR OT4 brand font */
+@font-face {
+  font-family: 'lr_ot4';
+  src: url('LandRoverWeb/LandRoverWeb-Bold.eot'); /* IE9 Compat Modes */
+  src: url('LandRoverWeb/LandRoverWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('LandRoverWeb/LandRoverWeb-Bold.woff') format('woff'), /* Modern Browsers */
+       url('LandRoverWeb/LandRoverWeb-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  bold;
+}
+@font-face {
+  font-family: 'lr_ot4';
+  src: url('LandRoverWeb/LandRoverWeb-Demi.eot'); /* IE9 Compat Modes */
+  src: url('LandRoverWeb/LandRoverWeb-Demi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('LandRoverWeb/LandRoverWeb-Demi.woff') format('woff'), /* Modern Browsers */
+       url('LandRoverWeb/LandRoverWeb-Demi.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  500;
+}
+@font-face {
+  font-family: 'lr_ot4';
+  src: url('LandRoverWeb/LandRoverWeb-Medium.eot'); /* IE9 Compat Modes */
+  src: url('LandRoverWeb/LandRoverWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('LandRoverWeb/LandRoverWeb-Medium.woff') format('woff'), /* Modern Browsers */
+       url('LandRoverWeb/LandRoverWeb-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  bold;
+}
+@font-face {
+  font-family: 'lr_ot4';
+  src: url('LandRoverWeb/LandRoverWeb-Light.eot'); /* IE9 Compat Modes */
+  src: url('LandRoverWeb/LandRoverWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('LandRoverWeb/LandRoverWeb-Light.woff') format('woff'), /* Modern Browsers */
+       url('LandRoverWeb/LandRoverWeb-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  100;
+}
+@font-face {
+  font-family: 'lr_ot4';
+  src: url('LandRoverWeb/LandRoverWeb-Medium.eot'); /* IE9 Compat Modes */
+  src: url('LandRoverWeb/LandRoverWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('LandRoverWeb/LandRoverWeb-Medium.woff') format('woff'), /* Modern Browsers */
+       url('LandRoverWeb/LandRoverWeb-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  normal;
+}
+
+
+/* Avenir copy font */
+@font-face {
+  font-family: 'Avenir';
+  src: url('avenir/Avenir_Heavy.eot'); /* IE9 Compat Modes */
+  src: url('avenir/Avenir_Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('avenir/Avenir_Heavy.woff') format('woff'), /* Modern Browsers */
+       url('avenir/Avenir_Heavy.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  bold;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('avenir/Avenir_Medium.eot'); /* IE9 Compat Modes */
+  src: url('avenir/Avenir_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('avenir/Avenir_Medium.woff') format('woff'), /* Modern Browsers */
+       url('avenir/Avenir_Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  500;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('avenir/Avenir_Roman.eot'); /* IE9 Compat Modes */
+  src: url('avenir/Avenir_Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('avenir/Avenir_Roman.woff') format('woff'), /* Modern Browsers */
+       url('avenir/Avenir_Roman.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('avenir/Avenir_Roman-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('avenir/Avenir_Roman-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('avenir/Avenir_Roman-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('avenir/Avenir_Roman-Oblique.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   italic;
+  font-weight:  normal;
+}
